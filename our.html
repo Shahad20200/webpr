@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Desin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OUR TEAM</title> 
+</head>
+<body>
+    <div id ="logo">
+        <h1> BANK BLOOD</h1>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="donation.html">DONATION</a></li>
+          <li><a href="blod.html">BLOOD TYPE</a></li>
+          <li><a href="application.html">APPLICATION</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+          <li><a href="our.html">OUR TEAM</a></li>
+        </ul>
+        </div>
+      <div class="bush"> 
+<ul id="lists"> 
+<li class="list" >Jinan Abdullah Al-Tolla 431008627</li> 
+<li class="list" >Remas Nasser Al-Qseer 431008680</li>
+<li class="list" >Shouq Saad Al-Balawi 431003895 </li> 
+<li class="list" >Shahad Eid Al-jowhary 431006756</li>
+</ul>
+</div> 
+   <script> 
+const list=document.getElementById("lists"); 
+const item=Array.from(list.children); 
+item.sort(()=>Math.random()-0.5); 
+list.innerHTML=''; 
+item.forEach(item=>{list.appendChild(item)}); 
+
+</script>
+</body>
+</html>
